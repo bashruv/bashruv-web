@@ -15,7 +15,6 @@ export default function App({ Component, pageProps }: AppProps) {
       <Head>
         <title>BASHRUV.DEV</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${modernDOS.variable} font-sans`}>
         <Component {...pageProps} />
