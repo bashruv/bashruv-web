@@ -38,8 +38,9 @@ export default function ErrorTemplate() {
     <>
       <Head>
         <meta name="description" content="I WILL BE BACK SOON" />
+        <meta name="theme-color" content="black" />
       </Head>
-      <section className="text-white bg-black h-screen p-4 overflow-y-scroll">
+      <section className="text-white p-4">
         panic(browser 0 caller 0x{getFormatDate(date)}): Kernal trap at
         0x20230116, type {asPath}=page fault
         <br />
@@ -87,6 +88,7 @@ export default function ErrorTemplate() {
         </a>{" "}
         to report this panic
       </section>
+      <div className="fixed top-0 w-full h-[150vh] -z-10 bg-black"></div>
     </>
   );
 }
