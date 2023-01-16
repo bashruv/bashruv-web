@@ -8,24 +8,27 @@ export default function IndexPage() {
   const [phase, setPhase] = useState(0);
   const { push } = useRouter();
 
-  async function phaseTimer() {
-    await sleep(1000);
-    setPhase(1);
-    await sleep(1000);
-    setPhase(2);
-    await sleep(2000);
-    localStorage.setItem("@login-date", new Date().toISOString().slice(0, 10));
-    push({ pathname: "/home" });
-  }
-
   useEffect(() => {
+    async function phaseTimer() {
+      await sleep(1000);
+      setPhase(1);
+      await sleep(1000);
+      setPhase(2);
+      await sleep(2000);
+      localStorage.setItem(
+        "@login-date",
+        new Date().toISOString().slice(0, 10)
+      );
+      push({ pathname: "/home" });
+    }
     phaseTimer();
-  }, []);
+  }, [push]);
 
   return (
     <>
       <Head>
         {phase !== 0 ? <title>BASHRUV.DEV</title> : <title>BOOTING...</title>}
+        <meta name="description" content="Welcome to bashruv.dev" />
       </Head>
       <section
         className={`${
