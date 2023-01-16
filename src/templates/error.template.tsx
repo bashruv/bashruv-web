@@ -1,7 +1,9 @@
-import Head from "next/head";
-import { useEffect, useState } from "react";
 import axios from "axios";
+import { useEffect, useState } from "react";
+import Head from "next/head";
+
 import { getFormatDate } from "@src/utils/get-format-date.util";
+import { useRouter } from "next/router";
 
 export default function ErrorTemplate() {
   const [userAgent, setAgent] = useState<string>();
@@ -12,6 +14,7 @@ export default function ErrorTemplate() {
     city: "unknown",
     ip: "XXX.XXX.XXX.XXX",
   });
+  const { asPath } = useRouter();
 
   const date = new Date();
 
@@ -38,7 +41,7 @@ export default function ErrorTemplate() {
       </Head>
       <section className="text-white bg-black h-screen p-4 overflow-y-scroll">
         panic(browser 0 caller 0x{getFormatDate(date)}): Kernal trap at
-        0x20230116, type index=page fault
+        0x20230116, type {asPath}=page fault
         <br />
         Error code: 0x00000000
         <br />
