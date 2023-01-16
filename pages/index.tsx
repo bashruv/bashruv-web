@@ -9,6 +9,20 @@ export default function IndexPage() {
   const { push } = useRouter();
 
   useEffect(() => {
+    const localItem = localStorage.getItem("@login-date");
+
+    if (localItem !== null) {
+      const localDate = new Date(localItem);
+      const today = new Date();
+      today.setHours(0);
+      today.setMinutes(0);
+      today.setSeconds(0);
+
+      if (localDate > today) {
+        push({ pathname: "/home" });
+      }
+    }
+
     async function phaseTimer() {
       await sleep(1000);
       setPhase(1);
