@@ -30,16 +30,24 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@next/font", "npm:13.1.2"],\
             ["@types/node", "npm:18.11.18"],\
+            ["@types/prettier", "npm:2.7.2"],\
+            ["@types/prop-types", "npm:15.7.5"],\
             ["@types/react", "npm:18.0.26"],\
             ["@types/react-dom", "npm:18.0.10"],\
             ["autoprefixer", "virtual:4dd9281a055a1716813198c8184ad9fe15d01c267703cca70a9532985629dcf575d48a4e15ef4149eba78963b5eaa854b629f185fee5c9c565f019d5b74303ac#npm:10.4.13"],\
             ["axios", "npm:1.2.2"],\
             ["eslint", "npm:8.32.0"],\
             ["eslint-config-next", "virtual:4dd9281a055a1716813198c8184ad9fe15d01c267703cca70a9532985629dcf575d48a4e15ef4149eba78963b5eaa854b629f185fee5c9c565f019d5b74303ac#npm:13.1.2"],\
+            ["moment", "npm:2.29.4"],\
             ["next", "virtual:4dd9281a055a1716813198c8184ad9fe15d01c267703cca70a9532985629dcf575d48a4e15ef4149eba78963b5eaa854b629f185fee5c9c565f019d5b74303ac#npm:13.1.2"],\
             ["postcss", "npm:8.4.21"],\
+            ["prettier", "npm:2.8.3"],\
+            ["prettier-plugin-tailwindcss", "virtual:4dd9281a055a1716813198c8184ad9fe15d01c267703cca70a9532985629dcf575d48a4e15ef4149eba78963b5eaa854b629f185fee5c9c565f019d5b74303ac#npm:0.2.1"],\
+            ["prop-types", "npm:15.8.1"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:4dd9281a055a1716813198c8184ad9fe15d01c267703cca70a9532985629dcf575d48a4e15ef4149eba78963b5eaa854b629f185fee5c9c565f019d5b74303ac#npm:18.2.0"],\
+            ["react-live-clock", "virtual:4dd9281a055a1716813198c8184ad9fe15d01c267703cca70a9532985629dcf575d48a4e15ef4149eba78963b5eaa854b629f185fee5c9c565f019d5b74303ac#npm:6.1.1"],\
+            ["react-moment", "virtual:4dd9281a055a1716813198c8184ad9fe15d01c267703cca70a9532985629dcf575d48a4e15ef4149eba78963b5eaa854b629f185fee5c9c565f019d5b74303ac#npm:1.1.3"],\
             ["tailwindcss", "virtual:4dd9281a055a1716813198c8184ad9fe15d01c267703cca70a9532985629dcf575d48a4e15ef4149eba78963b5eaa854b629f185fee5c9c565f019d5b74303ac#npm:3.2.4"],\
             ["typescript", "patch:typescript@npm%3A4.9.4#~builtin<compat/typescript>::version=4.9.4&hash=ad5954"]\
           ],\
@@ -368,6 +376,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-node-npm-18.11.18-d61e8a4a20-03f17f9480.zip/node_modules/@types/node/",\
           "packageDependencies": [\
             ["@types/node", "npm:18.11.18"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/prettier", [\
+        ["npm:2.7.2", {\
+          "packageLocation": "./.yarn/cache/@types-prettier-npm-2.7.2-6b2e2f518f-b47d76a525.zip/node_modules/@types/prettier/",\
+          "packageDependencies": [\
+            ["@types/prettier", "npm:2.7.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -859,16 +876,24 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["bashruv-web", "workspace:."],\
             ["@next/font", "npm:13.1.2"],\
             ["@types/node", "npm:18.11.18"],\
+            ["@types/prettier", "npm:2.7.2"],\
+            ["@types/prop-types", "npm:15.7.5"],\
             ["@types/react", "npm:18.0.26"],\
             ["@types/react-dom", "npm:18.0.10"],\
             ["autoprefixer", "virtual:4dd9281a055a1716813198c8184ad9fe15d01c267703cca70a9532985629dcf575d48a4e15ef4149eba78963b5eaa854b629f185fee5c9c565f019d5b74303ac#npm:10.4.13"],\
             ["axios", "npm:1.2.2"],\
             ["eslint", "npm:8.32.0"],\
             ["eslint-config-next", "virtual:4dd9281a055a1716813198c8184ad9fe15d01c267703cca70a9532985629dcf575d48a4e15ef4149eba78963b5eaa854b629f185fee5c9c565f019d5b74303ac#npm:13.1.2"],\
+            ["moment", "npm:2.29.4"],\
             ["next", "virtual:4dd9281a055a1716813198c8184ad9fe15d01c267703cca70a9532985629dcf575d48a4e15ef4149eba78963b5eaa854b629f185fee5c9c565f019d5b74303ac#npm:13.1.2"],\
             ["postcss", "npm:8.4.21"],\
+            ["prettier", "npm:2.8.3"],\
+            ["prettier-plugin-tailwindcss", "virtual:4dd9281a055a1716813198c8184ad9fe15d01c267703cca70a9532985629dcf575d48a4e15ef4149eba78963b5eaa854b629f185fee5c9c565f019d5b74303ac#npm:0.2.1"],\
+            ["prop-types", "npm:15.8.1"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:4dd9281a055a1716813198c8184ad9fe15d01c267703cca70a9532985629dcf575d48a4e15ef4149eba78963b5eaa854b629f185fee5c9c565f019d5b74303ac#npm:18.2.0"],\
+            ["react-live-clock", "virtual:4dd9281a055a1716813198c8184ad9fe15d01c267703cca70a9532985629dcf575d48a4e15ef4149eba78963b5eaa854b629f185fee5c9c565f019d5b74303ac#npm:6.1.1"],\
+            ["react-moment", "virtual:4dd9281a055a1716813198c8184ad9fe15d01c267703cca70a9532985629dcf575d48a4e15ef4149eba78963b5eaa854b629f185fee5c9c565f019d5b74303ac#npm:1.1.3"],\
             ["tailwindcss", "virtual:4dd9281a055a1716813198c8184ad9fe15d01c267703cca70a9532985629dcf575d48a4e15ef4149eba78963b5eaa854b629f185fee5c9c565f019d5b74303ac#npm:3.2.4"],\
             ["typescript", "patch:typescript@npm%3A4.9.4#~builtin<compat/typescript>::version=4.9.4&hash=ad5954"]\
           ],\
@@ -3176,6 +3201,25 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["moment", [\
+        ["npm:2.29.4", {\
+          "packageLocation": "./.yarn/cache/moment-npm-2.29.4-902943305d-0ec3f9c2bc.zip/node_modules/moment/",\
+          "packageDependencies": [\
+            ["moment", "npm:2.29.4"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["moment-timezone", [\
+        ["npm:0.5.40", {\
+          "packageLocation": "./.yarn/cache/moment-timezone-npm-0.5.40-873e898229-6f6be5412b.zip/node_modules/moment-timezone/",\
+          "packageDependencies": [\
+            ["moment-timezone", "npm:0.5.40"],\
+            ["moment", "npm:2.29.4"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["ms", [\
         ["npm:2.1.2", {\
           "packageLocation": "./.yarn/cache/ms-npm-2.1.2-ec0c1512ff-673cdb2c31.zip/node_modules/ms/",\
@@ -3750,6 +3794,37 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["prettier", [\
+        ["npm:2.8.3", {\
+          "packageLocation": "./.yarn/cache/prettier-npm-2.8.3-2c5624c4ca-92f2ceb522.zip/node_modules/prettier/",\
+          "packageDependencies": [\
+            ["prettier", "npm:2.8.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["prettier-plugin-tailwindcss", [\
+        ["npm:0.2.1", {\
+          "packageLocation": "./.yarn/cache/prettier-plugin-tailwindcss-npm-0.2.1-848c29a572-5a04b26f50.zip/node_modules/prettier-plugin-tailwindcss/",\
+          "packageDependencies": [\
+            ["prettier-plugin-tailwindcss", "npm:0.2.1"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:4dd9281a055a1716813198c8184ad9fe15d01c267703cca70a9532985629dcf575d48a4e15ef4149eba78963b5eaa854b629f185fee5c9c565f019d5b74303ac#npm:0.2.1", {\
+          "packageLocation": "./.yarn/__virtual__/prettier-plugin-tailwindcss-virtual-b878bf2c1f/0/cache/prettier-plugin-tailwindcss-npm-0.2.1-848c29a572-5a04b26f50.zip/node_modules/prettier-plugin-tailwindcss/",\
+          "packageDependencies": [\
+            ["prettier-plugin-tailwindcss", "virtual:4dd9281a055a1716813198c8184ad9fe15d01c267703cca70a9532985629dcf575d48a4e15ef4149eba78963b5eaa854b629f185fee5c9c565f019d5b74303ac#npm:0.2.1"],\
+            ["@types/prettier", "npm:2.7.2"],\
+            ["prettier", "npm:2.8.3"]\
+          ],\
+          "packagePeers": [\
+            "@types/prettier",\
+            "prettier"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["promise-inflight", [\
         ["npm:1.0.1", {\
           "packageLocation": "./.yarn/cache/promise-inflight-npm-1.0.1-5bb925afac-2274948309.zip/node_modules/promise-inflight/",\
@@ -3870,6 +3945,64 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/react-is-npm-16.13.1-a9b9382b4f-f7a19ac349.zip/node_modules/react-is/",\
           "packageDependencies": [\
             ["react-is", "npm:16.13.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["react-live-clock", [\
+        ["npm:6.1.1", {\
+          "packageLocation": "./.yarn/cache/react-live-clock-npm-6.1.1-9a58a59da5-89efe8ae4f.zip/node_modules/react-live-clock/",\
+          "packageDependencies": [\
+            ["react-live-clock", "npm:6.1.1"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:4dd9281a055a1716813198c8184ad9fe15d01c267703cca70a9532985629dcf575d48a4e15ef4149eba78963b5eaa854b629f185fee5c9c565f019d5b74303ac#npm:6.1.1", {\
+          "packageLocation": "./.yarn/__virtual__/react-live-clock-virtual-f745610e63/0/cache/react-live-clock-npm-6.1.1-9a58a59da5-89efe8ae4f.zip/node_modules/react-live-clock/",\
+          "packageDependencies": [\
+            ["react-live-clock", "virtual:4dd9281a055a1716813198c8184ad9fe15d01c267703cca70a9532985629dcf575d48a4e15ef4149eba78963b5eaa854b629f185fee5c9c565f019d5b74303ac#npm:6.1.1"],\
+            ["@types/react", "npm:18.0.26"],\
+            ["@types/react-moment", null],\
+            ["moment", "npm:2.29.4"],\
+            ["moment-timezone", "npm:0.5.40"],\
+            ["react", "npm:18.2.0"],\
+            ["react-moment", "virtual:4dd9281a055a1716813198c8184ad9fe15d01c267703cca70a9532985629dcf575d48a4e15ef4149eba78963b5eaa854b629f185fee5c9c565f019d5b74303ac#npm:1.1.3"]\
+          ],\
+          "packagePeers": [\
+            "@types/react-moment",\
+            "@types/react",\
+            "react-moment",\
+            "react"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["react-moment", [\
+        ["npm:1.1.3", {\
+          "packageLocation": "./.yarn/cache/react-moment-npm-1.1.3-ca615820fb-542902c42e.zip/node_modules/react-moment/",\
+          "packageDependencies": [\
+            ["react-moment", "npm:1.1.3"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:4dd9281a055a1716813198c8184ad9fe15d01c267703cca70a9532985629dcf575d48a4e15ef4149eba78963b5eaa854b629f185fee5c9c565f019d5b74303ac#npm:1.1.3", {\
+          "packageLocation": "./.yarn/__virtual__/react-moment-virtual-e27fc931d4/0/cache/react-moment-npm-1.1.3-ca615820fb-542902c42e.zip/node_modules/react-moment/",\
+          "packageDependencies": [\
+            ["react-moment", "virtual:4dd9281a055a1716813198c8184ad9fe15d01c267703cca70a9532985629dcf575d48a4e15ef4149eba78963b5eaa854b629f185fee5c9c565f019d5b74303ac#npm:1.1.3"],\
+            ["@types/moment", null],\
+            ["@types/prop-types", "npm:15.7.5"],\
+            ["@types/react", "npm:18.0.26"],\
+            ["moment", "npm:2.29.4"],\
+            ["prop-types", "npm:15.8.1"],\
+            ["react", "npm:18.2.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/moment",\
+            "@types/prop-types",\
+            "@types/react",\
+            "moment",\
+            "prop-types",\
+            "react"\
           ],\
           "linkType": "HARD"\
         }]\

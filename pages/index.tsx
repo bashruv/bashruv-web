@@ -47,12 +47,12 @@ export default function IndexPage() {
       <section
         className={`${
           phase === 0 ? "bg-black" : "bg-slate-200"
-        } w-full h-screen flex justify-center items-center`}
+        } flex h-screen w-full items-center justify-center`}
       >
         {phase === 2 && (
           <div className="border border-black py-4 px-6">
             <AsciiArt />
-            <p className="text-center mt-4 py-4">Welcome to bashruv.dev</p>
+            <p className="mt-4 py-4 text-center">Welcome to bashruv.dev</p>
           </div>
         )}
       </section>

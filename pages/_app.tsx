@@ -16,7 +16,9 @@ export default function App({ Component, pageProps }: AppProps) {
         <title>BASHRUV.DEV</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <main className={`${modernDOS.variable} font-sans`}>
+      <main
+        className={`${modernDOS.variable} cursor-[url('/assets/images/cursors/arrow.png')] font-sans`}
+      >
         <Component {...pageProps} />
       </main>
     </>
