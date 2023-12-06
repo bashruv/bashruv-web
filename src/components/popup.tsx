@@ -12,7 +12,7 @@ export function Popup() {
   return (
     <Draggable nodeRef={nodeRef} defaultClassName="">
       <GlassBox
-        className="p-8 w-[26.25rem] absolute right-5 bottom-40"
+        className="p-8 w-[26.25rem] absolute right-5 bottom-36"
         ref={nodeRef}
       >
         <div className="flex items-center gap-3">
