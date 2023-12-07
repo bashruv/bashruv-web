@@ -32,6 +32,8 @@ const RAW_RUNTIME_STATE =
           ["autoprefixer", "virtual:4dd9281a055a1716813198c8184ad9fe15d01c267703cca70a9532985629dcf575d48a4e15ef4149eba78963b5eaa854b629f185fee5c9c565f019d5b74303ac#npm:10.4.16"],\
           ["eslint", "npm:8.55.0"],\
           ["eslint-config-next", "virtual:4dd9281a055a1716813198c8184ad9fe15d01c267703cca70a9532985629dcf575d48a4e15ef4149eba78963b5eaa854b629f185fee5c9c565f019d5b74303ac#npm:14.0.3"],\
+          ["gsap", "npm:3.12.3"],\
+          ["jotai", "virtual:4dd9281a055a1716813198c8184ad9fe15d01c267703cca70a9532985629dcf575d48a4e15ef4149eba78963b5eaa854b629f185fee5c9c565f019d5b74303ac#npm:2.6.0"],\
           ["next", "virtual:4dd9281a055a1716813198c8184ad9fe15d01c267703cca70a9532985629dcf575d48a4e15ef4149eba78963b5eaa854b629f185fee5c9c565f019d5b74303ac#npm:14.0.3"],\
           ["postcss", "npm:8.4.32"],\
           ["react", "npm:18.2.0"],\
@@ -930,6 +932,8 @@ const RAW_RUNTIME_STATE =
           ["autoprefixer", "virtual:4dd9281a055a1716813198c8184ad9fe15d01c267703cca70a9532985629dcf575d48a4e15ef4149eba78963b5eaa854b629f185fee5c9c565f019d5b74303ac#npm:10.4.16"],\
           ["eslint", "npm:8.55.0"],\
           ["eslint-config-next", "virtual:4dd9281a055a1716813198c8184ad9fe15d01c267703cca70a9532985629dcf575d48a4e15ef4149eba78963b5eaa854b629f185fee5c9c565f019d5b74303ac#npm:14.0.3"],\
+          ["gsap", "npm:3.12.3"],\
+          ["jotai", "virtual:4dd9281a055a1716813198c8184ad9fe15d01c267703cca70a9532985629dcf575d48a4e15ef4149eba78963b5eaa854b629f185fee5c9c565f019d5b74303ac#npm:2.6.0"],\
           ["next", "virtual:4dd9281a055a1716813198c8184ad9fe15d01c267703cca70a9532985629dcf575d48a4e15ef4149eba78963b5eaa854b629f185fee5c9c565f019d5b74303ac#npm:14.0.3"],\
           ["postcss", "npm:8.4.32"],\
           ["react", "npm:18.2.0"],\
@@ -2324,6 +2328,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["gsap", [\
+      ["npm:3.12.3", {\
+        "packageLocation": "../.yarn/berry/cache/gsap-npm-3.12.3-68fe33dfbd-10c0.zip/node_modules/gsap/",\
+        "packageDependencies": [\
+          ["gsap", "npm:3.12.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["has-bigints", [\
       ["npm:1.0.2", {\
         "packageLocation": "../.yarn/berry/cache/has-bigints-npm-1.0.2-52732e614d-10c0.zip/node_modules/has-bigints/",\
@@ -2840,6 +2853,28 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../.yarn/berry/cache/jiti-npm-1.21.0-baebd5985a-10c0.zip/node_modules/jiti/",\
         "packageDependencies": [\
           ["jiti", "npm:1.21.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["jotai", [\
+      ["npm:2.6.0", {\
+        "packageLocation": "../.yarn/berry/cache/jotai-npm-2.6.0-dc8e6aef45-10c0.zip/node_modules/jotai/",\
+        "packageDependencies": [\
+          ["jotai", "npm:2.6.0"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:4dd9281a055a1716813198c8184ad9fe15d01c267703cca70a9532985629dcf575d48a4e15ef4149eba78963b5eaa854b629f185fee5c9c565f019d5b74303ac#npm:2.6.0", {\
+        "packageLocation": "./.yarn/__virtual__/jotai-virtual-8e395f35ae/2/.yarn/berry/cache/jotai-npm-2.6.0-dc8e6aef45-10c0.zip/node_modules/jotai/",\
+        "packageDependencies": [\
+          ["jotai", "virtual:4dd9281a055a1716813198c8184ad9fe15d01c267703cca70a9532985629dcf575d48a4e15ef4149eba78963b5eaa854b629f185fee5c9c565f019d5b74303ac#npm:2.6.0"],\
+          ["@types/react", "npm:18.2.42"],\
+          ["react", "npm:18.2.0"]\
+        ],\
+        "packagePeers": [\
+          "@types/react",\
+          "react"\
         ],\
         "linkType": "HARD"\
       }]\

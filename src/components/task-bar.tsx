@@ -1,39 +1,31 @@
 "use client";
 
-import { GlassBox } from "./glass-box";
-import { useClock } from "../hooks/use-clock";
 import Image from "next/image";
+import { useSetAtom } from "jotai";
+
+import { GlassBox } from "./glass-box";
+import { tabsAtom } from "../store/tabs";
+import { useClock } from "../hooks/use-clock";
 
 export function TaskBar() {
   const { date, time } = useClock();
+  const setTabs = useSetAtom(tabsAtom);
+
+  function handleArchiveTab() {
+    setTabs((prevState) => ({ ...prevState, archive: true }));
+  }
 
   return (
     <div className="right-5 flex bottom-5 absolute gap-4">
       <GlassBox className="!flex-row items-center px-4 gap-4">
-        <Image
-          src={"/icons/archive.png"}
-          width={80}
-          height={80}
-          alt="archive"
-        />
-        <Image
-          src={"/icons/archive.png"}
-          width={80}
-          height={80}
-          alt="archive"
-        />
-        <Image
-          src={"/icons/archive.png"}
-          width={80}
-          height={80}
-          alt="archive"
-        />
-        <Image
-          src={"/icons/archive.png"}
-          width={80}
-          height={80}
-          alt="archive"
-        />
+        <GlassBox hoverEnable Component="button" onClick={handleArchiveTab}>
+          <Image
+            src={"/icons/archive.png"}
+            width={80}
+            height={80}
+            alt="archive"
+          />
+        </GlassBox>
       </GlassBox>
       <GlassBox className="py-4 px-6">
         <p className="text-xl text-right">{date || "로딩 중..."}</p>

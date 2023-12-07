@@ -717,6 +717,8 @@ __metadata:
     autoprefixer: "npm:^10.0.1"
     eslint: "npm:^8"
     eslint-config-next: "npm:14.0.3"
+    gsap: "npm:^3.12.3"
+    jotai: "npm:^2.6.0"
     next: "npm:14.0.3"
     postcss: "npm:^8"
     react: "npm:^18"
@@ -1851,6 +1853,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gsap@npm:^3.12.3":
+  version: 3.12.3
+  resolution: "gsap@npm:3.12.3"
+  checksum: 018ca72c2f8b19be5b890439ec6fa777f650a52806928b0432a739f5141b29592c382d829cc71cec476c8e884dfa47c38b3d15b8e734453eb8c79b60e31ab234
+  languageName: node
+  linkType: hard
+
 "has-bigints@npm:^1.0.1, has-bigints@npm:^1.0.2":
   version: 1.0.2
   resolution: "has-bigints@npm:1.0.2"
@@ -2298,6 +2307,21 @@ __metadata:
   bin:
     jiti: bin/jiti.js
   checksum: 7f361219fe6c7a5e440d5f1dba4ab763a5538d2df8708cdc22561cf25ea3e44b837687931fca7cdd8cdd9f567300e90be989dd1321650045012d8f9ed6aab07f
+  languageName: node
+  linkType: hard
+
+"jotai@npm:^2.6.0":
+  version: 2.6.0
+  resolution: "jotai@npm:2.6.0"
+  peerDependencies:
+    "@types/react": ">=17.0.0"
+    react: ">=17.0.0"
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+    react:
+      optional: true
+  checksum: 8e1687453c3713d227c8081291e286b51ca634657dc456303b3d9f9bf80d67b4a5e71481768675a8480789b432e3b0c0159521ac7794df8a0cce989713fdc7a4
   languageName: node
   linkType: hard
 
