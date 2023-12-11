@@ -1,80 +1,87 @@
 [
   {
+    "id": 1,
     "name": "헬로, 언텍트.",
     "icon": "/icons/h-untact.svg",
     "urls": [
       {
-        "type": "archive",
+        "text": "[ARCHIVED] 홈페이지 방문하기",
         "url": "https://hello-untact.bashruv.dev/"
       }
     ],
     "desc": "H.Untact는 2020년 서울영상고등학교 미디어과 온라인 전시회 브랜드입니다."
   },
   {
-    "name": "사금 아카이브",
+    "id": 2,
+    "name": "사금: 아카이브",
     "icon": "/icons/sagum.png",
     "urls": [
       {
-        "type": "archive",
+        "text": "[ARCHIVED] 홈페이지 방문하기",
         "url": "https://sagum-archive.bashruv.dev/"
       }
     ],
     "desc": "사금 아카이브는 작가 사금의 역대 전시 기록과 작품이 보관된 아카이브입니다."
   },
   {
+    "id": 3,
     "name": "BCi",
     "icon": "/icons/bci.svg",
     "urls": [
       {
-        "type": "live",
+        "text": "홈페이지 방문하기",
         "url": "https://blockchaini.io/"
       }
     ],
     "desc": "BCi는 초기 블록체인 기업들을 지원하는 AC 기업입니다."
   },
   {
+    "id": 4,
     "name": "Seoul Tiger Capital",
     "icon": "/icons/stc.png",
     "urls": [
       {
-        "type": "archive",
+        "text": "[ARCHIVED] 홈페이지 방문하기",
         "url": "https://stc.bashruv.dev/"
       }
     ],
     "desc": "Seoul Tiger Capital은 초기 블록체인 기업들을 지원하는 AC 기업입니다."
   },
   {
+    "id": 5,
     "name": "Finngram",
     "icon": "/icons/finngram.svg",
     "urls": [
       {
-        "type": "live",
+        "text": "홈페이지 방문하기",
         "url": "https://finngram.com/"
       }
     ],
     "desc": "Finngram은 초기 블록체인 기업들을 지원하는 AC 기업입니다."
   },
   {
-    "name": "Dallem",
+    "id": 6,
+    "name": "달램",
     "icon": "/icons/dallem.svg",
     "urls": [
       {
-        "type": "live",
+        "text": "홈페이지 방문하기",
         "url": "https://dallem.com/"
       }
     ],
     "desc": "달램은 기업 웰니스 서비스를 제공하는 B2B 기업입니다."
   },
   {
+    "id": 7,
     "name": "MetaBeat",
     "icon": "/icons/metabeat.png",
     "urls": [
       {
-        "type": "live",
+        "text": "홈페이지 방문하기",
         "url": "https://metabeat.io/"
       },
       {
-        "type": "live",
+        "text": "플랫폼 방문하기",
         "url": "https://web.metabeat.io/"
       }
     ],
