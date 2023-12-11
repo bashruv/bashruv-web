@@ -27,9 +27,19 @@ export function TaskBar() {
           />
         </GlassBox>
       </GlassBox>
-      <GlassBox className="py-4 px-6">
-        <p className="text-xl text-right">{date || "로딩 중..."}</p>
-        <h1 className="text-5xl">{time || "로딩 중..."}</h1>
+      <GlassBox className="py-4 px-6 gap-6 !flex-row items-center">
+        <div>
+          <p className="text-xl text-right">{date || "로딩 중..."}</p>
+          <h1 className="text-5xl">{time || "로딩 중..."}</h1>
+        </div>
+        <GlassBox>
+          <Image
+            src={"/icons/archive.png"}
+            width={80}
+            height={80}
+            alt={"user"}
+          />
+        </GlassBox>
       </GlassBox>
     </div>
   );

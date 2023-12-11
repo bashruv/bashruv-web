@@ -4,6 +4,7 @@ import { Provider } from "jotai";
 import { Popup } from "@/src/components/popup";
 import { TaskBar } from "@/src/components/task-bar";
 import { ArchiveTab } from "@/src/components/tab/archive";
+import { AuthTab } from "@/src/components/tab/auth";
 
 function IndexPage() {
   return (
@@ -12,6 +13,7 @@ function IndexPage() {
         <ArchiveTab />
         <Popup />
         <TaskBar />
+        <AuthTab />
       </section>
       <Image
         src={

@@ -39,7 +39,7 @@ function GlassBoxComponent(
     { className: finalStyle, ref: ref, ...otherProps },
     <>
       {onRequestClose !== undefined && (
-        <div className="py-4 px-6 flex justify-end">
+        <div className="py-4 px-6 flex justify-end header-bar">
           <button
             className="bg-red-500 rounded-full p-2"
             onClick={onRequestClose}
