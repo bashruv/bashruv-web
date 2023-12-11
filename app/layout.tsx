@@ -8,7 +8,7 @@ const pretendard = LocalFont({
 });
 
 const modernDOS = LocalFont({
-  src: "../public/fonts/modernDOS.woff2",
+  src: "../public/fonts/ModernDOS.woff2",
   variable: "--font-modern-dos",
 });
 
