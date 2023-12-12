@@ -1,21 +1,34 @@
 "use client";
 
-import { useRef, useState } from "react";
-
-import { Logo } from "../icons/logo";
-import { GlassBox } from "./glass-box";
 import gsap from "gsap";
+import { useEffect, useRef, useState } from "react";
+
+import { Logo } from "@/src/icons/logo";
+import { GlassBox } from "@/src/components/glass-box";
 
 export function Popup() {
   const nodeRef = useRef(null);
 
-  const [isClosed, setClose] = useState(false);
+  const [isClosed, setClose] = useState(true);
 
   function handleClose() {
     gsap.to(nodeRef.current, { opacity: 0, duration: 0.5 }).then(() => {
       setClose(true);
     });
   }
+
+  function handlePermanentlyClose() {
+    localStorage.setItem("popup", "true");
+    handleClose();
+  }
+
+  useEffect(() => {
+    const isPopupPermanentlyClosed = localStorage.getItem("popup");
+
+    if (isPopupPermanentlyClosed === null) {
+      setClose(false);
+    }
+  }, []);
 
   return (
     !isClosed && (
@@ -34,12 +47,17 @@ export function Popup() {
           <br />
           좌측 하단 아이콘을 클릭하여 확인해보세요!
         </p>
-        <button
-          className="bg-indigo-600 self-end px-6 py-2 rounded-full mt-8"
-          onClick={handleClose}
-        >
-          <p className="font-bold">닫기</p>
-        </button>
+        <div className="flex justify-end items-center mt-8 gap-5">
+          <button onClick={handlePermanentlyClose}>
+            <p className="font-medium">다시는 보지 않기</p>
+          </button>
+          <button
+            className="bg-indigo-600 px-6 py-2 rounded-full"
+            onClick={handleClose}
+          >
+            <p className="font-bold">닫기</p>
+          </button>
+        </div>
       </GlassBox>
     )
   );

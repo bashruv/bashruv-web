@@ -15,6 +15,10 @@ export function TaskBar() {
     setTabs((prevState) => ({ ...prevState, archive: true }));
   }
 
+  function handleAdminTab() {
+    setTabs((prevState) => ({ ...prevState, admin: true }));
+  }
+
   return (
     <div className="right-5 flex bottom-5 absolute gap-4">
       <GlassBox className="!flex-row items-center px-4 gap-4">
@@ -32,13 +36,8 @@ export function TaskBar() {
           <p className="text-xl text-right">{date || "로딩 중..."}</p>
           <h1 className="text-5xl">{time || "로딩 중..."}</h1>
         </div>
-        <GlassBox>
-          <Image
-            src={"/icons/archive.png"}
-            width={80}
-            height={80}
-            alt={"user"}
-          />
+        <GlassBox Component="button" onClick={handleAdminTab}>
+          <Image src={"/icons/user.png"} width={80} height={80} alt={"user"} />
         </GlassBox>
       </GlassBox>
     </div>

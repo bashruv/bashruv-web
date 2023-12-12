@@ -1,19 +1,24 @@
+"use client";
+
 import Image from "next/image";
-import { Provider } from "jotai";
+import { Provider, useAtomValue } from "jotai";
 
 import { Popup } from "@/src/components/popup";
 import { TaskBar } from "@/src/components/task-bar";
+import { AdminTab } from "@/src/components/tab/admin";
 import { ArchiveTab } from "@/src/components/tab/archive";
-import { AuthTab } from "@/src/components/tab/auth";
+import { tabsAtom } from "@/src/store/tabs";
 
 function IndexPage() {
+  const tabs = useAtomValue(tabsAtom);
+
   return (
     <main className="h-screen w-screen overflow-hidden bg-gray-950">
       <section className="relative w-full h-full z-10">
-        <ArchiveTab />
+        {tabs.archive && <ArchiveTab />}
+        {tabs.admin && <AdminTab />}
         <Popup />
         <TaskBar />
-        <AuthTab />
       </section>
       <Image
         src={

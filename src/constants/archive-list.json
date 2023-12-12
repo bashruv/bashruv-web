@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "헬로, 언텍트.",
-    "icon": "/icons/h-untact.svg",
+    "icon": "/icons/projects/h-untact.svg",
     "urls": [
       {
         "text": "[ARCHIVED] 홈페이지 방문하기",
@@ -14,7 +14,7 @@
   {
     "id": 2,
     "name": "사금: 아카이브",
-    "icon": "/icons/sagum.png",
+    "icon": "/icons/projects/sagum.png",
     "urls": [
       {
         "text": "[ARCHIVED] 홈페이지 방문하기",
@@ -26,7 +26,7 @@
   {
     "id": 3,
     "name": "BCi",
-    "icon": "/icons/bci.svg",
+    "icon": "/icons/projects/bci.svg",
     "urls": [
       {
         "text": "홈페이지 방문하기",
@@ -38,7 +38,7 @@
   {
     "id": 4,
     "name": "Seoul Tiger Capital",
-    "icon": "/icons/stc.png",
+    "icon": "/icons/projects/stc.png",
     "urls": [
       {
         "text": "[ARCHIVED] 홈페이지 방문하기",
@@ -50,7 +50,7 @@
   {
     "id": 5,
     "name": "Finngram",
-    "icon": "/icons/finngram.svg",
+    "icon": "/icons/projects/finngram.svg",
     "urls": [
       {
         "text": "홈페이지 방문하기",
@@ -62,7 +62,7 @@
   {
     "id": 6,
     "name": "달램",
-    "icon": "/icons/dallem.svg",
+    "icon": "/icons/projects/dallem.svg",
     "urls": [
       {
         "text": "홈페이지 방문하기",
@@ -74,7 +74,7 @@
   {
     "id": 7,
     "name": "MetaBeat",
-    "icon": "/icons/metabeat.png",
+    "icon": "/icons/projects/metabeat.png",
     "urls": [
       {
         "text": "홈페이지 방문하기",

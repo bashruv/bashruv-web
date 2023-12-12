@@ -1,22 +1,46 @@
 "use client";
 
+import gsap from "gsap";
+import { useAtom } from "jotai";
 import Draggable from "react-draggable";
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
+
 import "@corbado/webcomponent/pkg/auth_cui.css";
 
-import { GlassBox } from "../glass-box";
 import { Logo } from "@/src/icons/logo";
+import { tabsAtom } from "@/src/store/tabs";
+import { GlassBox } from "@/src/components/glass-box";
 
-export function AuthTab() {
+export function AdminTab() {
   const nodeRef = useRef(null);
-  const [user, setUser] = useState<User | null>(null);
   const [session, setSession] = useState(null);
+  const [{ admin }, setTabs] = useAtom(tabsAtom);
+  const [user, setUser] = useState<User | null>(null);
+
+  function handleOpen() {
+    gsap.to(nodeRef.current, { opacity: 1, duration: 0.2 });
+    return;
+  }
+
+  const handleClose = useCallback(() => {
+    gsap
+      .to(nodeRef.current, { opacity: 0, duration: 0.2 })
+      .then(() => setTabs((prevState) => ({ ...prevState, admin: false })));
+  }, [setTabs]);
 
   async function handleLogout() {
     // @ts-ignore
     await session.logout();
     setUser(null);
   }
+
+  useEffect(() => {
+    if (admin) {
+      handleOpen();
+    } else {
+      handleClose();
+    }
+  }, [admin, handleClose]);
 
   useEffect(() => {
     import("@corbado/webcomponent")
@@ -42,9 +66,9 @@ export function AuthTab() {
   return (
     <Draggable nodeRef={nodeRef} handle=".header-bar">
       <GlassBox
-        className="w-[26.25rem] pb-4"
-        onRequestClose={() => {}}
+        className="w-[26.25rem] pb-4 left-5 top-5 absolute opacity-0"
         ref={nodeRef}
+        onRequestClose={handleClose}
       >
         <div className="flex flex-col col-start-2 col-end-4 items-center justify-center opacity-30 mb-4">
           <Logo className="scale-75" />
